@@ -8,7 +8,7 @@ export default async function Home() {
 	log(users);
 	return (
 		<div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-			<main className="max-w-[1560px] justify-center w-full grid xl:grid-cols-4 2xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-10 gap-x-5 mt-80">
+			<main className="max-w-[1560px] justify-center w-full grid xl:grid-cols-4 2xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-10 gap-x-5 lg:pt-[36rem] pt-[80rem] ">
 				{users &&
 					users?.users?.map((user: IUser) => (
 						<UserCard {...user} key={user?.id} />
